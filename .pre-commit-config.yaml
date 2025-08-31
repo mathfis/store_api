@@ -1,0 +1,13 @@
+repos:  # Lista de repositórios de hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks  # Repo oficial de hooks básicos
+    rev: v4.4.0                                          # Versão estável
+    hooks:                                               # Lista de hooks deste repo
+      - id: trailing-whitespace   # Remove espaços no final das linhas
+      - id: end-of-file-fixer     # Adiciona quebra de linha no final do arquivo  
+      - id: check-yaml            # Valida sintaxe de arquivos YAML
+      - id: check-added-large-files  # Bloqueia arquivos >500KB
+  - repo: https://github.com/psf/black  # Repo do black (formatador Python)
+    rev: 23.11.0                         # Versão do black
+    hooks:                               # Hooks deste repo
+      - id: black                       # Hook específico: black
+        language_version: python3.11    # Usa Python 3.11

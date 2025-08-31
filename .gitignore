@@ -1,0 +1,14 @@
+# Variáveis de ambiente
+.env.local
+
+# Arquivos sensíveis
+secrets.py
+
+# Logs e temporários
+*.log
+__pycache__/
+*.pyc
+
+# Diretórios de ambiente virtual
+.venv/
+venv/
